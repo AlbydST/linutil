@@ -60,6 +60,10 @@ impl CustomList {
                 command: include_str!("commands/system-update.sh"),
             },
             ListNode {
+                name: "Remove Obsolete Packages",
+                command: include_str!("commands/remove-orphans.sh"),
+            },
+            ListNode {
                 name: "Setup Bash Prompt",
                 command: "bash -c \"$(curl -s https://raw.githubusercontent.com/ChrisTitusTech/mybash/main/setup.sh)\""
             },
