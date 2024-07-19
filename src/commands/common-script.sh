@@ -20,7 +20,7 @@ checkEnv() {
     done
 
     ## Check Package Handler
-    PACKAGEMANAGER='apt-get dnf pacman zypper'
+    PACKAGEMANAGER='apt-get nala dnf pacman zypper xbps-install emerge nix-env slackpkg apk eopkg yum rad kiss'
     for pgm in ${PACKAGEMANAGER}; do
         if command_exists ${pgm}; then
             PACKAGER=${pgm}
